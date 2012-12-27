@@ -8,12 +8,12 @@ Use a step down converter instead.
 
 For connecting the OpenPilot with the MinimOSD you have to connect the OpenPilot JST with the MinimOSD as follows:
 
-GND - GND
 
-PWR - +5V
+|| *OpenPilot JST* || *MinimOSD* ||
+|| GND || GND ||
+|| PWR || +5V ||
+|| RX || TX ||
+|| TX || RX ||
 
-RX - TX
-
-TX - RX
 
 But be aware, that the OpenPilot is powered by max. 5V, so the output PWR from OpenPilot only carries 5V.
