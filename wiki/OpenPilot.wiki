@@ -1,0 +1,6 @@
+= Setting OpenPilot to communicate with MinimOSD =
+
+jpg 1
+
+jpg 2
+
