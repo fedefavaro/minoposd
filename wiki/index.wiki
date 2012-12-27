@@ -1,7 +1,0 @@
-#sidebar Menu
-
-= Introduction =
-
-Lorem ipsum
-
-Have fun
