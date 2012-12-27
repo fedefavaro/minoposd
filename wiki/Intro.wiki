@@ -6,6 +6,9 @@ minOPOSD is an add-on to the ArduCamOSD/MinimOSD-Extra project.
 
 With this add-on you can use the MinimOSD hardware in combination with a flight control from OpenPilot like CC3D and Revo which uses UAVTalk as communication protocol. 
 
+Currently not every MinimOSD panel is implemented, for example the RSSI, Efficiency and CallSign panels are missing.
+
+
 This project is in beta state and using it is at your own risk.
 
 Have fun
