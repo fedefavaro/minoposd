@@ -1,0 +1,13 @@
+= Hardware connections using OpenPilot with MinimOSD =
+
+All about connecting a GPS to OpenPilot can be found in the OpenPilot wiki http://wiki.openpilot.org/display/Doc/GPS+Add-on
+
+But be aware: If you are using a 3.3V GPS don't connect it directly to the 5V of the OpenPilot JST connector. 
+Use a step down converter instead.
+
+For connecting the OpenPilot with the MinimOSD you have to connect the OpenPilot JST with the MinimOSD as follows:
+
+GND - GND
+PWR - +5V
+RX - TX
+TX - RX

@@ -3,4 +3,6 @@
 * [Intro Introduction]
 
   * [OpenPilot OpenPilot configuration]
+
+  * [Connections hardware connections]
   
