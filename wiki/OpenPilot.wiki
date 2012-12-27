@@ -1,8 +1,25 @@
 = Setting OpenPilot to communicate with MinimOSD =
 
+To use the MinimOSD at CC3D or Revo you have to configure the following things:
+
+FlexiPort: GPS
+MainPort: Telemetry
+RecvPort: choose whatever you are using
+
 http://minoposd.googlecode.com/svn/wiki/images/HWsettingsGPSTelemetry.jpg
 
+For using the GPS you have to enable GPS under OptionalModules
 
+http://minoposd.googlecode.com/svn/wiki/images/HWsettingsOptionalModules.jpg
 
+Double check if the AttitudeActual Flight Telemetry Update Period is 100ms
 
-...
+http://minoposd.googlecode.com/svn/wiki/images/AttitudeActual.jpg
+
+To have a faster response to your RC-RX input you have to change the ManualControlCommand Flight Telemetry Update Period from 2000ms to 500ms
+
+http://minoposd.googlecode.com/svn/wiki/images/ManualControlCommand.jpg
+
+When you have to configure your GPS you can temporarily configure ComBridge, but don't forget to change it back as shown in the first picture
+
+http://minoposd.googlecode.com/svn/wiki/images/HWsettingsComBridge.jpg
