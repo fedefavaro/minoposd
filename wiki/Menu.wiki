@@ -3,8 +3,8 @@
 * [Intro Introduction]
 
   * [OpenPilot OpenPilot configuration]
-  * [Connections hardware connections]
+  * [Connections Hardware connections]
   * [MinimOSD MinimOSD update]
-  * [FlightBatt flightbatt measurements]
-  * [Compiling compiling the source]
+  * [FlightBatt FlightBatt measurements]
+  * [Compiling Compiling the source]
   
