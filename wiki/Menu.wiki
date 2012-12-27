@@ -4,6 +4,7 @@
 
   * [OpenPilot OpenPilot configuration]
   * [Connections hardware connections]
+  * [MinimOSD MinimOSD update]
   * [FlightBatt flightbatt measurements]
   * [Compiling compiling the source]
   
