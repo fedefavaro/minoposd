@@ -1,7 +1,13 @@
 = Setting OpenPilot to communicate with MinimOSD =
 
 
-To use the MinimOSD at CC3D or Revo you have to configure the following things:
+Everything about OpenPilot can be found here: http://www.openpilot.org/ 
+
+
+On this page you can find the info what you have to configure to use the MinimOSD with CC3D or Revo.
+
+
+Over all hardware settings:
 
 FlexiPort: GPS
 
@@ -12,7 +18,7 @@ RecvPort: choose whatever you are using
 http://minoposd.googlecode.com/svn/wiki/images/HWsettingsGPSTelemetry.jpg
 
 
-For using the GPS you have to enable GPS under HardwareSettings OptionalModules.
+For using the GPS you have to enable GPS under HWSettings OptionalModules.
 
 It is a good idea to enable the ComUsbBridge at this stage, so you can configure the GPS via the CC3D later.
 
