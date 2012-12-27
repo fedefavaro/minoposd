@@ -5,4 +5,5 @@
   * [OpenPilot OpenPilot configuration]
   * [Connections hardware connections]
   * [FlightBatt flight batt enhancement]
+  * [Compiling compiling the source]
   
