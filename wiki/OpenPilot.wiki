@@ -3,7 +3,9 @@
 
 Everything about OpenPilot can be found here: http://www.openpilot.org/ 
 
+
 ----
+
 
 On this page you can find the info what you have to configure to use the MinimOSD with CC3D or Revo.
 
@@ -22,7 +24,9 @@ http://minoposd.googlecode.com/svn/wiki/images/HWsettingsGPSTelemetry.jpg
 Currently the best results for GPS were found using 38400 baud and an update rate of 5Hz.
 With higher update rates the OpenPilot gets event warnings and CPU overloads!
 
+
 ----
+
 
 For using the GPS you have to enable GPS under HWSettings OptionalModules.
 
@@ -32,19 +36,25 @@ More info about using GPS at CC3D can be found in the OpenPilot wiki http://wiki
 
 http://minoposd.googlecode.com/svn/wiki/images/HWsettingsOptionalModules.jpg
 
+
 ----
+
 
 Double check if the AttitudeActual Flight Telemetry Update Period is 100ms.
 
 http://minoposd.googlecode.com/svn/wiki/images/AttitudeActual.jpg
 
+
 ----
+
 
 To have a faster response to your RC controls you have to change the ManualControlCommand Flight Telemetry Update Period from 2000ms to 500ms.
 
 http://minoposd.googlecode.com/svn/wiki/images/ManualControlCommand.jpg
 
+
 ----
+
 
 When you have to configure your GPS you can *temporarily* configure ComBridge, but don't forget to *change it back* as shown in the first picture!
 
