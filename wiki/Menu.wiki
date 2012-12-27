@@ -4,6 +4,6 @@
 
   * [OpenPilot OpenPilot configuration]
   * [Connections hardware connections]
-  * [FlightBatt flight batt measurements]
+  * [FlightBatt flightbatt measurements]
   * [Compiling compiling the source]
   
