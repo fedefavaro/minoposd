@@ -41,7 +41,8 @@ To have a faster response to your RC controls you have to change the ManualContr
 http://minoposd.googlecode.com/svn/wiki/images/ManualControlCommand.jpg
 
 
-When you have to configure your GPS you can temporarily configure ComBridge, but don't forget to change it back as shown in the first picture!
+
+When you have to configure your GPS you can TEMPORARILY configure ComBridge, but don't forget to CHANGE IT BACK as shown in the first picture!
 
 More info about using ComBridge at CC3D can be found in the OpenPilot wiki http://wiki.openpilot.org/display/Doc/Hardware+Settings#HardwareSettings-VirtualCommPortConfiguration
 
