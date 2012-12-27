@@ -9,11 +9,11 @@ On this page you can find the info what you have to configure to use the MinimOS
 
 Over all hardware settings:
 
-FlexiPort: GPS
+|| *Port* || *External* ||
+|| FlexiPort || GPS ||
+|| MainPort || Telemetry ||
+|| RcvrPort || whatever you are using ||
 
-MainPort: Telemetry
-
-RecvPort: choose whatever you are using
 
 http://minoposd.googlecode.com/svn/wiki/images/HWsettingsGPSTelemetry.jpg
 
