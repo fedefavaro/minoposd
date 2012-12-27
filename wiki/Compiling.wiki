@@ -1,7 +1,7 @@
 = Compiling the source =
 
 
-The main add-ons to the original code can be found in the new files:
+The main add-ons to the original code can be found in the files:
 
 
 UAVTalk.h
