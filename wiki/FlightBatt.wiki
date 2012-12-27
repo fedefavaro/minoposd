@@ -1,0 +1,7 @@
+= FlightBatt measurements on MinimOSD =
+
+Measuring the FlightBatt volt there is some soldering necessary on the MinimOSD.
+
+Measuring the FlightBatt ampere there is some soldering necessary on the MinimOSD and you have to buy an extra current sensor.
+
+How to do these things will follow on this wiki page.
