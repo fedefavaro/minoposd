@@ -1,5 +1,5 @@
 = Setting OpenPilot to communicate with MinimOSD =
 
-http://code.google.com/images/HWsettingsGPSTelemetry.jpg
+http://code.google.com/p/minoposd/source/browse/images/HWsettingsGPSTelemetry.jpg
 
 ...
