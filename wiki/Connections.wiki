@@ -15,3 +15,5 @@ PWR - +5V
 RX - TX
 
 TX - RX
+
+But be aware, that the OpenPilot is powered by max. 5V, so the output PWR from OpenPilot only carries 5V.

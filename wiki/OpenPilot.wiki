@@ -18,6 +18,10 @@ RecvPort: choose whatever you are using
 http://minoposd.googlecode.com/svn/wiki/images/HWsettingsGPSTelemetry.jpg
 
 
+Currently the best results for GPS were found using 38400 Baud and an update rate of 5Hz.
+With higher update rates the OpenPilot gets event and CPU overloads!
+
+
 For using the GPS you have to enable GPS under HWSettings OptionalModules.
 
 It is a good idea to enable the ComUsbBridge at this stage, so you can configure the GPS via the CC3D later.

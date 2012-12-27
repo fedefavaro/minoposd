@@ -20,4 +20,5 @@ http://code.google.com/p/arducam-osd/
 
 http://code.google.com/p/minimosd-extra/
 
-I only uploaded the files with additional code. You can find the changes by searching for 'JRChange'. Merging this into the original code gives you the possibility to build the hex file by your own.
+I only uploaded the files with additional code. You can find the changes by searching for 'JRChange'. 
+Merging this changes into the original code gives you the possibility to build the hex file by your own.
