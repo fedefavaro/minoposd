@@ -14,3 +14,10 @@ As a little preview the soldering for measuring the FlightBatt voltage is shown 
 
 http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt.jpg
 
+
+It is a voltage divider using the following parts:
+
+|| *count* || *type* || *value* || *precision* ||
+|| 1 || resistor || 16.0 kOhm || 1% ||
+|| 1 || resistor || 1.1 kOhm || 1% ||
+|| 1 || capacitor || 100nF ||  ||
