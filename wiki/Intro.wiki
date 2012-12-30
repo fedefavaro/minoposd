@@ -8,8 +8,7 @@ With this add-on you can use the MinimOSD hardware in combination with a flight 
 
 It is intended as a temporary solution for the FPV guys till the OpenPilot OSD is available.
 
-Currently it is only working with OpenPilot-RELEASE 12.10.1	Major Release from October 26th, 2012.
-I have to double check if the UAVObject definitions have changed in the new release!
+It is working with OpenPilot-RELEASE 12.10.1 and OpenPilot-RELEASE 12.10.2.
 
 Currently not every MinimOSD panel is implemented, for example the RSSI, Efficiency and CallSign panels are missing.
 
