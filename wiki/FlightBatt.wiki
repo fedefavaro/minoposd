@@ -19,7 +19,7 @@ and with heatshrink:
 http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_002.jpg
 
 
-It is a voltage divider using the following parts:
+It is a voltage divider / filter using the following parts:
 
 || *count* || *type* || *value* || *precision* ||
 || 1 || resistor || 16.0 kOhm || 1% ||
