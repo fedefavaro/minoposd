@@ -12,11 +12,11 @@ How to do these things will follow on this wiki page.
 
 As a little preview the necessary soldering for measuring the FlightBatt voltage is shown here without heatshrink for clarity:
 
-http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt001.jpg
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_001.jpg
 
 and with heatshrink:
 
-http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt002.jpg
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_002.jpg
 
 
 It is a voltage divider using the following parts:
