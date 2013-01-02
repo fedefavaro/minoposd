@@ -15,4 +15,8 @@ Currently not every MinimOSD panel is implemented, for example the RSSI, Efficie
 
 This project is in beta state and using it is at your own risk.
 
+
+http://minoposd.googlecode.com/svn/wiki/images/SystemOverview.jpg
+
+
 Have fun
