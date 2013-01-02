@@ -30,8 +30,20 @@ It is a voltage divider / filter using the following parts:
 ----
 
 
-After the soldering for current measuring and now with complete heatshrink:
+After the soldering for current measuring with complete heatshrink:
 
 http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_003.jpg
+
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_004.jpg
+
+The current sensor voltage divider:
+
+http://minoposd.googlecode.com/svn/wiki/images/CurrentSensor_001.jpg
+
+The current sensor and the MinimOSD:
+
+http://minoposd.googlecode.com/svn/wiki/images/CurrentSensor_002.jpg
+
+The current measurement is not testet yet!
 
 Details will follow.
