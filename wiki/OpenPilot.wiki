@@ -28,11 +28,15 @@ With higher update rates the OpenPilot gets event warnings and CPU overloads!
 ----
 
 
-For using the GPS you have to enable GPS under HWSettings OptionalModules.
+All info about using GPS at CC3D can be found in the OpenPilot wiki http://wiki.openpilot.org/display/Doc/GPS+Add-on
+
+For using the GPS you have to choose the GPS type, I'm using NMEA.
+
+http://minoposd.googlecode.com/svn/wiki/images/GPSSettings.jpg
+
+You also have to enable GPS under HWSettings OptionalModules.
 
 It is a good idea to enable the ComUsbBridge at this stage, so you can configure your GPS using the CC3D as virtual com port later.
-
-More info about using GPS at CC3D can be found in the OpenPilot wiki http://wiki.openpilot.org/display/Doc/GPS+Add-on
 
 http://minoposd.googlecode.com/svn/wiki/images/HWsettingsOptionalModules.jpg
 
