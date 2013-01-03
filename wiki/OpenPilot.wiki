@@ -7,7 +7,7 @@ Everything about OpenPilot can be found here: http://www.openpilot.org/
 ----
 
 
-On this page you can find the info what you have to configure to use the MinimOSD with CC3D or Revo.
+On this page you can find the information what you have to configure to use the MinimOSD with CC3D or Revo.
 
 
 Over all hardware settings:
@@ -28,9 +28,9 @@ With higher update rates the OpenPilot gets event warnings and CPU overloads!
 ----
 
 
-All info about using GPS at CC3D can be found in the OpenPilot wiki http://wiki.openpilot.org/display/Doc/GPS+Add-on
+All about using GPS at CC3D can be found in the OpenPilot wiki http://wiki.openpilot.org/display/Doc/GPS+Add-on
 
-For using the GPS you have to choose the GPS type, I'm using NMEA.
+For using the GPS you have to choose the DataProtocol type of your GPS, I'm using NMEA.
 
 http://minoposd.googlecode.com/svn/wiki/images/GPSSettings.jpg
 
@@ -62,7 +62,7 @@ http://minoposd.googlecode.com/svn/wiki/images/ManualControlCommand.jpg
 
 When you have to configure your GPS you can *temporarily* configure ComBridge, but don't forget to *change it back* as shown in the first picture!
 
-More info about using ComBridge of CC3D can be found in the OpenPilot wiki http://wiki.openpilot.org/display/Doc/Hardware+Settings#HardwareSettings-VirtualCommPortConfiguration
+More about using ComBridge of CC3D can be found in the OpenPilot wiki http://wiki.openpilot.org/display/Doc/Hardware+Settings#HardwareSettings-VirtualCommPortConfiguration
 
 Set the ComUsbBridge speed to the speed your GPS is using.
 
