@@ -16,7 +16,16 @@ Currently not every MinimOSD panel is implemented, for example the RSSI, Efficie
 This project is in beta state and using it is at your own risk.
 
 
+System overview:
+
 http://minoposd.googlecode.com/svn/wiki/images/SystemOverview.jpg
+
+
+The system used  in the Quadrixette 30:
+
+http://minoposd.googlecode.com/svn/wiki/images/OSDQuadrixette30_001.jpg
+
+http://minoposd.googlecode.com/svn/wiki/images/OSDQuadrixette30_002.jpg
 
 
 Have fun
