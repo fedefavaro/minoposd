@@ -60,7 +60,7 @@ http://minoposd.googlecode.com/svn/wiki/images/ManualControlCommand.jpg
 ----
 
 
-If you like a faster OSD panel display of GPS position changes you can change the GPSPosition Flight Telemetry Update Period to 200ms.
+If you like a faster OSD panel update of GPS position changes you can change the GPSPosition Flight Telemetry Update Period to 200ms.
 
 http://minoposd.googlecode.com/svn/wiki/images/GPSPosition.jpg
 
@@ -68,7 +68,7 @@ http://minoposd.googlecode.com/svn/wiki/images/GPSPosition.jpg
 ----
 
 
-If you like a faster OSD panel display of GPS velocity changes you can change the GPSVelocity Flight Telemetry Update Period to 200ms.
+If you like a faster OSD panel update of GPS velocity changes you can change the GPSVelocity Flight Telemetry Update Period to 200ms.
 
 http://minoposd.googlecode.com/svn/wiki/images/GPSVelocity.jpg
 
