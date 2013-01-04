@@ -52,9 +52,25 @@ http://minoposd.googlecode.com/svn/wiki/images/AttitudeActual.jpg
 ----
 
 
-To have a faster response to your RC controls you have to change the ManualControlCommand Flight Telemetry Update Period from 2000ms to 500ms.
+To have a faster response to your RC inputs you have to change the ManualControlCommand Flight Telemetry Update Period to 500ms.
 
 http://minoposd.googlecode.com/svn/wiki/images/ManualControlCommand.jpg
+
+
+----
+
+
+If you like a faster OSD panel display of GPS position changes you can change the GPSPosition Flight Telemetry Update Period to 200ms.
+
+http://minoposd.googlecode.com/svn/wiki/images/GPSPosition.jpg
+
+
+----
+
+
+If you like a faster OSD panel display of GPS velocity changes you can change the GPSVelocity Flight Telemetry Update Period to 200ms.
+
+http://minoposd.googlecode.com/svn/wiki/images/GPSVelocity.jpg
 
 
 ----
