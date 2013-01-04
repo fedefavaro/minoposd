@@ -21,7 +21,7 @@ System overview:
 http://minoposd.googlecode.com/svn/wiki/images/SystemOverview.jpg
 
 
-The system used  in the Quadrixette 30:
+The system mounted in the well-known Quadrixette 30:
 
 http://minoposd.googlecode.com/svn/wiki/images/OSDQuadrixette30_001.jpg
 
