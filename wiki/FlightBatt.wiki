@@ -36,14 +36,19 @@ http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_003.jpg
 
 http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_004.jpg
 
-The current sensor voltage divider:
+The current sensor needs a voltage divider, because we use the internal 1.1 V ADC reference of the ATmega 328p:
 
 http://minoposd.googlecode.com/svn/wiki/images/CurrentSensor_001.jpg
+
+It is a voltage divider using the following parts:
+
+|| *count* || *type* || *value* || *precision* ||
+|| 1 || resistor || 3.0 kOhm || 1% ||
+|| 1 || resistor || 1.1 kOhm || 1% ||
 
 The current sensor and the MinimOSD:
 
 http://minoposd.googlecode.com/svn/wiki/images/CurrentSensor_002.jpg
 
-The current measurement is not testet yet!
 
 Details will follow.
