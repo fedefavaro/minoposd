@@ -22,9 +22,9 @@ http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_002.jpg
 It is a voltage divider / filter using the following parts:
 
 || *count* || *type* || *value* || *precision* ||
-|| 1 || resistor || 16.0 kOhm || 1% ||
-|| 1 || resistor || 1.1 kOhm || 1% ||
 || 1 || capacitor || 100 nF ||  ||
+|| 1 || resistor || 1.1 kOhm || 1% ||
+|| 1 || resistor || 16.0 kOhm || 1% ||
 
 
 ----
@@ -43,8 +43,8 @@ http://minoposd.googlecode.com/svn/wiki/images/CurrentSensor_001.jpg
 It is a voltage divider using the following parts:
 
 || *count* || *type* || *value* || *precision* ||
-|| 1 || resistor || 3.0 kOhm || 1% ||
 || 1 || resistor || 1.1 kOhm || 1% ||
+|| 1 || resistor || 3.0 kOhm || 1% ||
 
 The current sensor and the MinimOSD:
 
