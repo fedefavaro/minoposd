@@ -27,5 +27,11 @@ http://minoposd.googlecode.com/svn/wiki/images/OSDQuadrixette30_001.jpg
 
 http://minoposd.googlecode.com/svn/wiki/images/OSDQuadrixette30_002.jpg
 
+http://minoposd.googlecode.com/svn/wiki/images/OSDQuadrixette30_003.jpg
+
+http://minoposd.googlecode.com/svn/wiki/images/OSDQuadrixette30_004.jpg
+
+http://minoposd.googlecode.com/svn/wiki/images/OSDQuadrixette30_005.jpg
+
 
 Have fun
