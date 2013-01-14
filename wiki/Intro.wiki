@@ -13,9 +13,6 @@ It is working with OpenPilot-RELEASE 12.10.1 and OpenPilot-RELEASE 12.10.2.
 Currently not every MinimOSD panel is implemented, for example the RSSI, Efficiency and CallSign panels are missing.
 
 
-This project is in beta state and using it is at your own risk.
-
-
 System overview:
 
 http://minoposd.googlecode.com/svn/wiki/images/SystemOverview.jpg
