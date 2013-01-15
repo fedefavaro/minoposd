@@ -12,6 +12,8 @@ Only do this if you have some good soldering skills, especially soldering direct
 
 Also only do this if you have the knowledge of what you are doing.
 
+If you do not have both, please wait for the OpenPilot OSD. With that, soldering is not necessary. 
+
 Bad soldering or less knowledge can risk your aerial vehicle and even lives!
 
 
