@@ -10,7 +10,9 @@ For measuring the FlightBatt ampere there is some soldering necessary on the Min
 
 Only do this if you have some good soldering skills, especially soldering directly at the ATmega 328p.
 
-Bad soldering can risk your aerial vehicle and even lives!
+Also only do this if you have the knowledge of what you are doing.
+
+Bad soldering or less knowledge can risk your aerial vehicle and even lives!
 
 
 ----
