@@ -8,7 +8,7 @@ For measuring the FlightBatt ampere there is some soldering necessary on the Min
 ----
 
 
-Please do this only if you have some good soldering skills, especially soldering directly at the ATmega 328p.
+Only do this if you have some good soldering skills, especially soldering directly at the ATmega 328p.
 
 Bad soldering can risk your aerial vehicle and even lives!
 
@@ -55,6 +55,14 @@ It is a voltage divider using the following parts:
 The current sensor and the MinimOSD:
 
 http://minoposd.googlecode.com/svn/wiki/images/CurrentSensor_002.jpg
+
+
+----
+
+
+After the soldering you have to calibrate the system.
+
+How to reach the calibration-menu see: http://code.google.com/p/minimosd-extra/wiki/OSD_menu
 
 
 ----
