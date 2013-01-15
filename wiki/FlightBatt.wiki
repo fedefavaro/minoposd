@@ -4,13 +4,19 @@ For measuring the FlightBatt voltage there is some soldering necessary on the Mi
 
 For measuring the FlightBatt ampere there is some soldering necessary on the MinimOSD and you have to use an extra current sensor.
 
-How to do these things will follow on this wiki page.
+
+----
+
+
+Please do this only if you have some good soldering skills, especially soldering directly at the ATmega 328p.
+
+Bad soldering can risk your aerial vehicle and even lives!
 
 
 ----
 
 
-As a little preview the necessary soldering for measuring the FlightBatt voltage is shown here without heatshrink for clarity:
+As a little preview the necessary soldering for measuring the FlightBatt voltage on an 3s system is shown here without heatshrink for clarity:
 
 http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_001.jpg
 
@@ -51,4 +57,10 @@ The current sensor and the MinimOSD:
 http://minoposd.googlecode.com/svn/wiki/images/CurrentSensor_002.jpg
 
 
-Details will follow.
+----
+
+
+More info will follow on demand.
+
+
+----
