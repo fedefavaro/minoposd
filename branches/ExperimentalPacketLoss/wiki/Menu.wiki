@@ -1,0 +1,10 @@
+#sidebar Menu
+
+* [Intro Introduction]
+
+  * [OpenPilot OpenPilot configuration]
+  * [Connections Hardware connections]
+  * [MinimOSD MinimOSD update]
+  * [FlightBatt FlightBatt measurements]
+  * [Compiling Compiling the source]
+  

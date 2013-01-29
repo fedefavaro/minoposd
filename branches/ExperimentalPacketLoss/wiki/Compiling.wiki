@@ -1,0 +1,27 @@
+= Compiling the source =
+
+
+The main add-ons to the original code can be found in the files:
+
+
+UAVTalk.h
+
+UAVTalk.ino
+
+FlightBatt.h
+
+FlightBatt.ino
+
+
+
+But not to fork the two other original projects:
+
+http://code.google.com/p/arducam-osd/
+
+http://code.google.com/p/minimosd-extra/
+
+I only uploaded the files with additional code.
+
+You can find the changes by searching for 'JRChange'. 
+
+Merging this changes into the original code gives you the possibility to build the hex file by your own.
