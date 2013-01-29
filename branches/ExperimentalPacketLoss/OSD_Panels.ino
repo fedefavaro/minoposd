@@ -7,6 +7,11 @@
 #include "FlightBatt.h"
 #endif
 
+// JRChange: PacketLoss on MinimOSD:
+#ifdef PACKETLOSS_ON_MINIMOSD
+#include "PacketLoss.h"
+#endif
+
 // JRChange: Flight Batt on MinimOSD:
 #define HIGHEST_SETUP_MENU	11
 
@@ -128,6 +133,13 @@ void writePanels(){
 // Staus  : done
 
 void panRSSI(int first_col, int first_line){
+// JRChange: PacketLoss on MinimOSD:
+#ifdef PACKETLOSS_ON_MINIMOSD
+    osd.setPanel(first_col, first_line);
+    osd.openPanel();
+    PacketLoss_print();
+    osd.closePanel();
+#else
     osd.setPanel(first_col, first_line);
     osd.openPanel();
     rssi = (int16_t)osd_rssi;
@@ -138,6 +150,7 @@ void panRSSI(int first_col, int first_line){
     if (rssi < -99) rssi = -99;
     osd.printf("%c%3i%c", 0xE1, rssi, 0x25); 
     osd.closePanel();
+#endif
 }
 
 /* **************************************************************** */
@@ -753,7 +766,7 @@ void panLogo(){
     osd.setPanel(5, 5);
     osd.openPanel();
 #ifdef PROTOCOL_UAVTALK
-    osd.printf_P(PSTR("\x20\x20\x20\x20\x20\xba\xbb\xbc\xbd\xbe|\x20\x20\x20\x20\x20\xca\xcb\xcc\xcd\xce|minOPOSD 1.0.0"));
+    osd.printf_P(PSTR("\x20\x20\x20\x20\x20\xba\xbb\xbc\xbd\xbe|\x20\x20\x20\x20\x20\xca\xcb\xcc\xcd\xce|minOPOSD 1.0.1 Beta"));
 #else
     osd.printf_P(PSTR("\x20\x20\x20\x20\x20\xba\xbb\xbc\xbd\xbe|\x20\x20\x20\x20\x20\xca\xcb\xcc\xcd\xce|MinimOSD Extra 2.1.1"));
 #endif

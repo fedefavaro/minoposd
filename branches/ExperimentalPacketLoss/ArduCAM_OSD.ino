@@ -174,6 +174,11 @@ void setup()
     flight_batt_init();
 #endif
 
+// JRChange: PacketLoss on MinimOSD:
+#ifdef PACKETLOSS_ON_MINIMOSD
+    PacketLoss_init();
+#endif
+
     // Startup MAVLink timers  
     mavlinkTimer.Set(&OnMavlinkTimer, 120);
 
