@@ -1,7 +1,0 @@
-= MinimOSD update and config =
-
-In the download section http://code.google.com/p/minoposd/downloads/list you can find a zipped config tool and the hex file.
-
-After unzipping the config tool you can use this tool for updating the minOPOSD firmware and configuring the MinimOSD for your needs as described here http://code.google.com/p/minimosd-extra/wiki/Config_Tool
-
-But please remember, not every panel is currently portet 1 to 1 compared to MinimOSD-Extra.
