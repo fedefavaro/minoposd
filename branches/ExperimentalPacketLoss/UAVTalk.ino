@@ -262,8 +262,16 @@ uint8_t uavtalk_parse_char(uint8_t c, uavtalk_message_t *msg) {
 			}
 			else {
 				msg->Length += ((uint16_t) c) << 8;
-				status = UAVTALK_PARSE_STATE_GOT_LENGTH;
-				cnt = 0;
+                                if ((msg->Length < 8) || (msg->Length > 255 + 8)) {
+                                       // Drop corrupted messages:
+                                       // Minimal length is 8 (headers)
+                                       // Maximum is 8 (headers) + 255 (Data) + 2 (Optional Instance Id)
+                                       // As we are not parsing Instance Id, 255 is a hard maximum. 
+				       status = UAVTALK_PARSE_STATE_WAIT_SYNC;
+                                } else {
+				       status = UAVTALK_PARSE_STATE_GOT_LENGTH;
+				       cnt = 0;
+                                }
 			}
 		break;
 		case UAVTALK_PARSE_STATE_GOT_LENGTH:
@@ -370,6 +378,10 @@ int uavtalk_read(void) {
         				osd_roll		= (int16_t) uavtalk_get_float(&msg, ATTITUDEACTUAL_OBJ_ROLL);
         				osd_pitch		= (int16_t) uavtalk_get_float(&msg, ATTITUDEACTUAL_OBJ_PITCH);
         				osd_yaw			= (int16_t) uavtalk_get_float(&msg, ATTITUDEACTUAL_OBJ_YAW);
+                                        // if we don't have a GPS, use Yaw for heading
+                                        if (osd_lat == 0) {
+                                            osd_heading = osd_yaw;
+                                        }
 				break;
 				case FLIGHTSTATUS_OBJID:
                                         response = UAVTALK_TYPE_ACK;
@@ -386,22 +398,22 @@ int uavtalk_read(void) {
                                         response = UAVTALK_TYPE_ACK;
 					osd_throttle		= (int16_t) (100.0 * uavtalk_get_float(&msg, MANUALCONTROLCOMMAND_OBJ_THROTTLE));
 					if (osd_throttle < 0 || osd_throttle > 200) osd_throttle = 0;
-// JRChange: JR specials
-#ifdef JR_SPECIALS	// I'm using mode 3
-					chan1_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_1);
+					// Channel mapping:
+					// 0   is Throttle
+                                        // 1-2 are Roll / Pitch 
+                                        // 3   is Yaw
+                                        // 4   is Mode
+                                        // 5   is Collective (Heli - constant 65536 otherwhise)
+                                        // 6-8 are Accessory 0-2
+                                        // In OPOSD:
+                                        // chanx_raw     used for menu navigation (Roll/pitch)
+                                        // osd_chanx_raw used for panel navigation (Accessory)
+                                        chan1_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_1);
 					chan2_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_2);
 					osd_chan5_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_4);
-					osd_chan6_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_5);
-					osd_chan7_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_6);
-					osd_chan8_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_7);
-#else
-					chan1_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_0);
-					chan2_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_1);
-					osd_chan5_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_4);
-					osd_chan6_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_5);
-					osd_chan7_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_6);
-					osd_chan8_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_7);
-#endif
+					osd_chan6_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_6);
+					osd_chan7_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_7);
+					osd_chan8_raw		= uavtalk_get_int16(&msg, MANUALCONTROLCOMMAND_OBJ_CHANNEL_8);
 				break;
 				case GPSPOSITION_OBJID:
                                         response = UAVTALK_TYPE_ACK;

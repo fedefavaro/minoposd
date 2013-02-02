@@ -10,10 +10,10 @@
 #define PROTOCOL_UAVTALK
 // JRChange: Flight Batt on MinimOSD:
 #define FLIGHT_BATT_ON_MINIMOSD
-// JRChange: PacketLoss on MinimOSD:
-//#define PACKETLOSS_ON_MINIMOSD
+// JRChange: PacketRxOk on MinimOSD:
+#define PACKETRXOK_ON_MINIMOSD
 // JRChange: JR specials
-//#define JR_SPECIALS
+#define JR_SPECIALS
 
 // EEPROM Stepping, be careful not to overstep. 
 // We reserved floats for just to be sure if some values needs to be

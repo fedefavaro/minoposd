@@ -7,9 +7,9 @@
 #include "FlightBatt.h"
 #endif
 
-// JRChange: PacketLoss on MinimOSD:
-#ifdef PACKETLOSS_ON_MINIMOSD
-#include "PacketLoss.h"
+// JRChange: PacketRxOk on MinimOSD:
+#ifdef PACKETRxOk_ON_MINIMOSD
+#include "PacketRxOk.h"
 #endif
 
 // JRChange: Flight Batt on MinimOSD:
@@ -43,7 +43,9 @@ void writePanels(){
             {
                 if(ISd(panel,Warn_BIT)) panWarn(panWarn_XY[0][panel], panWarn_XY[1][panel]); // this must be here so warnings are always checked
                 //Testing bits from 8 bit register A 
+#ifndef PROTOCOL_UAVTALK
                 if(ISa(panel,Cen_BIT)) panCenter(panCenter_XY[0][panel], panCenter_XY[1][panel]);   //4x2
+#endif
                 if(ISa(panel,Pit_BIT)) panPitch(panPitch_XY[0][panel], panPitch_XY[1][panel]); //5x1
                 if(ISa(panel,Rol_BIT)) panRoll(panRoll_XY[0][panel], panRoll_XY[1][panel]); //5x1
                 if(ISa(panel,BatA_BIT)) panBatt_A(panBatt_A_XY[0][panel], panBatt_A_XY[1][panel]); //7x1
@@ -133,11 +135,11 @@ void writePanels(){
 // Staus  : done
 
 void panRSSI(int first_col, int first_line){
-// JRChange: PacketLoss on MinimOSD:
-#ifdef PACKETLOSS_ON_MINIMOSD
+// JRChange: PacketRxOk on MinimOSD:
+#ifdef PACKETRXOK_ON_MINIMOSD
     osd.setPanel(first_col, first_line);
     osd.openPanel();
-    PacketLoss_print();
+    PacketRxOk_print();
     osd.closePanel();
 #else
     osd.setPanel(first_col, first_line);
@@ -309,7 +311,11 @@ void panWindSpeed(int first_col, int first_line){
 
 void panOff(){
     if (ch_toggle == 4){
+#ifdef PROTOCOL_UAVTALK
+        if ((osd_mode != FLIGHTSTATUS_FLIGHTMODE_AUTOTUNE) && (osd_mode != FLIGHTSTATUS_FLIGHTMODE_POSITIONHOLD)){
+#else
         if (((apm_mav_type == 1) && ((osd_mode != 11) && (osd_mode != 1))) || ((apm_mav_type == 2) && ((osd_mode != 6) && (osd_mode != 7)))){
+#endif
             if (osd_off_switch != osd_mode){ 
                 osd_off_switch = osd_mode;
                 osd_switch_time = millis();
@@ -546,12 +552,13 @@ void panWarn(int first_col, int first_line){
                     if (osd_vbat_A < float(battv)/10.0 || osd_battery_remaining_A < batt_warn_level) warning_type = 4;
 #endif
                     break;
-// JRChange: disabled for testing
-#if 0
                 case 5:
+// JRChange: PacketRxOk on MinimOSD:
+#ifdef PACKETRxOk_ON_MINIMOSD
+		    rssi = PacketRxOk_get();
+#endif
                     if (rssi < rssi_warn_level && rssi != -99 && !rssiraw_on) warning_type = 5;
                     break;
-#endif
                 }
                 if (x == last_warning) break; // if we've done a full cycle then there mustn't be any warnings
             }
@@ -680,6 +687,7 @@ void panHomeDis(int first_col, int first_line){
     osd.closePanel();
 }
 
+#ifndef PROTOCOL_UAVTALK
 /* **************************************************************** */
 // Panel  : panCenter
 // Needs  : X, Y locations
@@ -693,6 +701,7 @@ void panCenter(int first_col, int first_line){
     osd.printf_P(PSTR("\x05\x03\x04\x05|\x15\x13\x14\x15"));
     osd.closePanel();
 }
+#endif
 
 /* **************************************************************** */
 // Panel  : panHorizon
@@ -766,7 +775,11 @@ void panLogo(){
     osd.setPanel(5, 5);
     osd.openPanel();
 #ifdef PROTOCOL_UAVTALK
-    osd.printf_P(PSTR("\x20\x20\x20\x20\x20\xba\xbb\xbc\xbd\xbe|\x20\x20\x20\x20\x20\xca\xcb\xcc\xcd\xce|minOPOSD 1.0.1 Beta"));
+#ifdef JR_SPECIALS
+    osd.printf_P(PSTR("\x20\x20\x20\x20\x20\xba\xbb\xbc\xbd\xbe|\x20\x20\x20\x20\x20\xca\xcb\xcc\xcd\xce|minOPOSD 1.1.0 JRS"));
+#else
+    osd.printf_P(PSTR("\x20\x20\x20\x20\x20\xba\xbb\xbc\xbd\xbe|\x20\x20\x20\x20\x20\xca\xcb\xcc\xcd\xce|minOPOSD 1.1.0"));
+#endif
 #else
     osd.printf_P(PSTR("\x20\x20\x20\x20\x20\xba\xbb\xbc\xbd\xbe|\x20\x20\x20\x20\x20\xca\xcb\xcc\xcd\xce|MinimOSD Extra 2.1.1"));
 #endif
@@ -982,14 +995,14 @@ void panFlightMode(int first_col, int first_line){
 // JRChange: OpenPilot UAVTalk:
 #ifdef PROTOCOL_UAVTALK
     char* mode_str="";
-    if      (osd_mode == 0) mode_str = "man";	// MANUAL
-    else if (osd_mode == 1) mode_str = "st1";	// STABILIZED1
-    else if (osd_mode == 2) mode_str = "st2";	// STABILIZED2
-    else if (osd_mode == 3) mode_str = "st3"; 	// STABILIZED3
-    else if (osd_mode == 4) mode_str = "at ";	// AUTOTUNE
-    else if (osd_mode == 5) mode_str = "ah ";	// ALTITUDEHOLD
-    else if (osd_mode == 5) mode_str = "vc ";	// VELOCITYCONTROL
-    else if (osd_mode == 5) mode_str = "ph ";	// POSITIONHOLD
+    if      (osd_mode == FLIGHTSTATUS_FLIGHTMODE_MANUAL         ) mode_str = "man";	// MANUAL
+    else if (osd_mode == FLIGHTSTATUS_FLIGHTMODE_STABILIZED1    ) mode_str = "st1";	// STABILIZED1
+    else if (osd_mode == FLIGHTSTATUS_FLIGHTMODE_STABILIZED2    ) mode_str = "st2";	// STABILIZED2
+    else if (osd_mode == FLIGHTSTATUS_FLIGHTMODE_STABILIZED3    ) mode_str = "st3";	// STABILIZED3
+    else if (osd_mode == FLIGHTSTATUS_FLIGHTMODE_AUTOTUNE       ) mode_str = "at ";	// AUTOTUNE
+    else if (osd_mode == FLIGHTSTATUS_FLIGHTMODE_ALTITUDEHOLD   ) mode_str = "ah ";	// ALTITUDEHOLD
+    else if (osd_mode == FLIGHTSTATUS_FLIGHTMODE_VELOCITYCONTROL) mode_str = "vc ";	// VELOCITYCONTROL
+    else if (osd_mode == FLIGHTSTATUS_FLIGHTMODE_POSITIONHOLD   ) mode_str = "ph ";	// POSITIONHOLD
     osd.printf("%c%s", 0xE0, mode_str);
     if (osd_armed == 0 || osd_armed == 1) {	// unarmed
         osd.printf("-");

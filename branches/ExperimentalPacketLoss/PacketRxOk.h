@@ -1,9 +1,9 @@
 /**
  ******************************************************************************
  *
- * @file       PacketLoss.h
+ * @file       PacketRxOk.h
  * @author     Joerg-D. Rothfuchs
- * @brief      Implements packet loss detection and measurement
+ * @brief      Implements packet receive ok detection and measurement
  * 	       on the Ardupilot Mega MinimOSD using INT1.
  * @see        The GNU Public License (GPL) Version 3
  *
@@ -25,18 +25,25 @@
  */
 
 
-// !!! For using this, you have to solder a little bit on the MinimOSD, see the wiki !!!
+// !!! For using this, you have to solder a little bit, see the wiki !!!
+/*
+ * PacketRxOk is a digital version of RSSI.
+ * It uses the green LED on 2.4GHz RC-RX which blinks when packets are lost.
+ * It works well with the LED behavior of the GigaScan RX.
+ * The Futaba RX begins to blink too late, just before total loss.
+*/
 
 
-#ifndef PACKETLOSS_H_
-#define PACKETLOSS_H_
+#ifndef PACKETRXOK_H_
+#define PACKETRXOK_H_
 
 
-#define PL_PACKET_PIN			3
-#define PL_INT  			1
+#define PRO_PIN				3
+#define PRO_INT  			1
 
-void PacketLoss_init(void);
-void PacketLoss_print(void);
+void PacketRxOk_init(void);
+uint8_t PacketRxOk_get(void);
+void PacketRxOk_print(void);
 
 
-#endif /* PACKETLOSS_H_ */
+#endif /* PACKETRXOK_H_ */
