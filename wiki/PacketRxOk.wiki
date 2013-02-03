@@ -1,8 +1,8 @@
-= Packet Rx Ok detection =
+= PacketRxOk detection =
 
-For Packet Rx Ok detection there is a little soldering necessary on the MinimOSD and the used RC receiver.
+For PacketRxOk detection there is a little soldering necessary on the MinimOSD and the used RC receiver.
 
-Packet Rx Ok detection is the digital version of RSSI.
+PacketRxOk detection is the digital version of RSSI.
 
 It uses the green LED on 2.4GHz RC receiver which blinks when packets are lost.
 

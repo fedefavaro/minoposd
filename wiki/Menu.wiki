@@ -6,6 +6,6 @@
   * [Connections Hardware connections]
   * [MinimOSD MinimOSD update]
   * [FlightBatt FlightBatt measurements]
-  * [PacketRxOk Packet Rx Ok detection]
+  * [PacketRxOk PacketRxOk detection]
   * [Compiling Compiling the source]
   
