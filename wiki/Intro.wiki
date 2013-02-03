@@ -10,7 +10,7 @@ It is intended as a temporary solution for the FPV guys till the OpenPilot OSD i
 
 It is working with OpenPilot-RELEASE 12.10.1 and OpenPilot-RELEASE 12.10.2.
 
-Currently not every MinimOSD panel is implemented, for example the RSSI, Efficiency and CallSign panels are missing.
+Currently not every MinimOSD panel is implemented, for example the Efficiency and CallSign panels are missing.
 
 
 System overview:
