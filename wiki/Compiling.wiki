@@ -22,6 +22,6 @@ http://code.google.com/p/minimosd-extra/
 
 I only uploaded the files with additional code.
 
-You can find the changes by searching for 'JRChange'. 
+You can find the changes by searching for 'JRChange' for the initial version and following the svn commits for all other versions.
 
 Merging this changes into the original code gives you the possibility to build the hex file by your own.
