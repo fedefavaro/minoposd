@@ -12,15 +12,13 @@ FlightBatt.h
 
 FlightBatt.ino
 
+PacketRxOk.h
+
+PacketRxOk.ino
 
 
-But not to fork the two other original projects:
 
-http://code.google.com/p/arducam-osd/
-
-http://code.google.com/p/minimosd-extra/
-
-I only uploaded the files with additional code.
+But not to fork the two other original projects http://code.google.com/p/arducam-osd/ and http://code.google.com/p/minimosd-extra/ I only uploaded the files with additional code.
 
 You can find the changes by searching for 'JRChange' for the initial version and following the svn commits for all other versions.
 
