@@ -41,11 +41,11 @@ It is a voltage divider / filter using the following parts:
 
 The soldering for current measuring, beware of the pin assignment at the connector, it depends on the used sensor:
 
-http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_CurrSens001.jpg
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_CurrSens_001.jpg
 
-http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_CurrSens002.jpg
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_CurrSens_002.jpg
 
-http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_CurrSens003.jpg
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_CurrSens_003.jpg
 
 
 After the soldering for current measuring with complete heatshrink:
