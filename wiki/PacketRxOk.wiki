@@ -58,6 +58,8 @@ Since the PAL detection solder-jumper on the MinimOSD isn't used with the new fi
 
 http://minoposd.googlecode.com/svn/wiki/images/PacketRxOk_005.jpg
 
+http://minoposd.googlecode.com/svn/wiki/images/PacketRxOk_006.jpg
+
 
 ----
 
