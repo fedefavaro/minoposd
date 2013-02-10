@@ -20,7 +20,7 @@ Bad soldering or less knowledge can risk your aerial vehicle and even lives!
 ----
 
 
-As a little preview the necessary soldering for measuring the FlightBatt voltage on an 3s system is shown here without heatshrink for clarity:
+The necessary soldering for measuring the FlightBatt voltage on an 3s system is shown here without heatshrink for clarity:
 
 http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_001.jpg
 
@@ -38,6 +38,14 @@ It is a voltage divider / filter using the following parts:
 
 
 ----
+
+The soldering for current measuring, beware of the pin assignment at the connector, it depends on the used sensor:
+
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_CurrSens001.jpg
+
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_CurrSens002.jpg
+
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_CurrSens003.jpg
 
 
 After the soldering for current measuring with complete heatshrink:
