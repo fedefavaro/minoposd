@@ -20,6 +20,14 @@ Bad soldering or less knowledge can risk your aerial vehicle and even lives!
 ----
 
 
+Since I own the old version V0.1 of the MinimOSD with the heating problem, I desoldered the capacitor to isolate the 12V from the OSD and powered it from the 5V side.
+
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_000.jpg
+
+
+----
+
+
 The necessary soldering for measuring the FlightBatt voltage on an 3s system is shown here without heatshrink for clarity:
 
 http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_001.jpg
