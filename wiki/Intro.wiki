@@ -30,5 +30,9 @@ http://minoposd.googlecode.com/svn/wiki/images/OSDQuadrixette30_004.jpg
 
 http://minoposd.googlecode.com/svn/wiki/images/OSDQuadrixette30_005.jpg
 
+The version with the NEO-6M GPS:
+
+http://minoposd.googlecode.com/svn/wiki/images/OSDQuadrixette30_006.jpg
+
 
 Have fun

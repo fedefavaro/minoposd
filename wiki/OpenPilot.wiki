@@ -30,7 +30,9 @@ With higher update rates the OpenPilot gets event warnings and CPU overloads!
 
 All about using GPS at CC3D can be found in the OpenPilot wiki http://wiki.openpilot.org/display/Doc/GPS+Add-on
 
-For using the GPS you have to choose the DataProtocol type of your GPS, I'm using NMEA.
+For using the GPS you have to choose the DataProtocol type of your GPS.
+
+In this example I'm using NMEA for the LS20033 GPS. If you are using the NEO-6M or OP GPS, then choose UBX.
 
 http://minoposd.googlecode.com/svn/wiki/images/GPSSettings.jpg
 
