@@ -34,6 +34,8 @@ For using the GPS you have to choose the DataProtocol type of your GPS.
 
 In this example I'm using NMEA for the LS20033 GPS. If you are using the NEO-6M or OP GPS, then choose UBX.
 
+(find a config file for the NEO-6M here: http://code.google.com/p/minoposd/source/browse/#svn%2Ftrunk%2Fconfigs )
+
 http://minoposd.googlecode.com/svn/wiki/images/GPSSettings.jpg
 
 You also have to enable GPS under HWSettings OptionalModules.
