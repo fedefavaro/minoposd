@@ -32,9 +32,9 @@ All about using GPS at CC3D can be found in the OpenPilot wiki http://wiki.openp
 
 For using the GPS you have to choose the DataProtocol type of your GPS.
 
-In this example I'm using NMEA for the LS20033 GPS. If you are using the NEO-6M or OP GPS, then choose UBX.
+In this example I'm using NMEA for the LOCOSYS LS20033 GPS. If you are using the u-blox NEO-6M or OpenPilot GPS, then choose UBX.
 
-(find a config file for the NEO-6M here: http://code.google.com/p/minoposd/source/browse/#svn%2Ftrunk%2Fconfigs )
+(find a config file for the u-blox NEO-6M here: http://code.google.com/p/minoposd/source/browse/#svn%2Ftrunk%2Fconfigs )
 
 http://minoposd.googlecode.com/svn/wiki/images/GPSSettings.jpg
 
