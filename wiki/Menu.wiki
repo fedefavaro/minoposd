@@ -4,7 +4,7 @@
 
   * [OpenPilot OpenPilot configuration]
   * [Connections Hardware connections]
-  * [MinimOSD MinimOSD update]
+  * [MinimOSD MinimOSD update & config]
   * [FlightBatt FlightBatt measurements]
   * [PacketRxOk PacketRxOk detection]
   * [Compiling Compiling the source]
