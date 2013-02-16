@@ -7,5 +7,6 @@
   * [MinimOSD MinimOSD update & config]
   * [FlightBatt FlightBatt measurements]
   * [PacketRxOk PacketRxOk detection]
+  * [AnalogRSSI Analog RSSI]
   * [Compiling Compiling the source]
   
