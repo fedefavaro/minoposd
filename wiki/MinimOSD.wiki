@@ -6,4 +6,26 @@ After unzipping the config tool you can use this tool for updating the minOPOSD 
 
 Please carefully read the first 6 chapter of the 'Using Config Tool' documentation of the upper link, especially the 'Set screen change' part, and configure it to your needs.
 
-But please remember, not every panel is currently portet 1 to 1 compared to MinimOSD-Extra.
+Please remember, not every panel is portet 1 to 1 compared to MinimOSD-Extra.
+
+The Battery Percent panel is used for showing the consumed mAh.
+
+The following panels are not supported:
+
+Center
+
+HeartBeat
+
+WP Direction
+
+WP Distance
+
+AirSpeed
+
+WindSpeed
+
+Tune
+
+Efficiency
+
+CallSign
