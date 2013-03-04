@@ -34,7 +34,7 @@ The version with the u-blox NEO-6M GPS:
 
 http://minoposd.googlecode.com/svn/wiki/images/OSDQuadrixette30_006.jpg
 
-The system in the famous OV3RQUAD:
+The V0.1 clone mounted in the famous OV3RQUAD:
 
 http://minoposd.googlecode.com/svn/wiki/images/OSDov3rquad_001.jpg
 
