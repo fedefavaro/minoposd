@@ -16,6 +16,10 @@ PacketRxOk.h
 
 PacketRxOk.ino
 
+AnalogRssi.h
+
+AnalogRssi.ino
+
 
 
 But not to fork the two other original projects http://code.google.com/p/arducam-osd/ and http://code.google.com/p/minimosd-extra/ I only uploaded the files with additional code.
