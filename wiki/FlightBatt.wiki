@@ -20,9 +20,31 @@ Bad soldering or less knowledge can risk your aerial vehicle and even lives!
 ----
 
 
-Since I own the old version V0.1 of the MinimOSD with the heating problem, I first of all desoldered the capacitor to isolate the 12V from the OSD and powered it from the 5V side.
+Since I own the old version V0.1 of the MinimOSD with the heating problem, I first of all desoldered the capacitor to isolate the 12V from the OSD and powered it from the 5V side:
 
 http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_000.jpg
+
+
+----
+
+
+Then I changed the 2x3 header to a 3x3 header to have the possibility to connect a current sensor:
+
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_sideview.jpg
+
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_bottomview.jpg
+
+
+----
+
+
+After that I soldered the cables which are connected to the flight battery:
+
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_12V.jpg
+
+With that the FPV cam and the video transmitter can be powered by the flight batt and the flight batt voltage can be meassured by the voltage divider I soldered in the next steps.
+
+But be aware: This only works with 3s (12.6V) flight batt and if the FPV cam and video transmitter works with 12V!
 
 
 ----
@@ -87,6 +109,22 @@ http://minoposd.googlecode.com/svn/wiki/images/CurrentSensor_003.jpg
 After the soldering you have to calibrate the system.
 
 How to reach the calibration-menu see: http://code.google.com/p/minimosd-extra/wiki/OSD_menu
+
+
+----
+
+
+Here you can see the system with the connected cables:
+
+http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_cables.jpg
+
+From top to bottom:
+
+cable from FPVcam
+
+cable to video transmitter
+
+cable from current sensor
 
 
 ----
