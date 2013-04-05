@@ -28,7 +28,7 @@ http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_000.jpg
 ----
 
 
-Then I changed the 2x3 header to a 3x3 header to have the possibility to connect a current sensor:
+And I changed the 2x3 header to a 3x3 header to have the possibility to connect a current sensor:
 
 http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_sideview.jpg
 
