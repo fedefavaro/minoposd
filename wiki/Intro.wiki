@@ -8,7 +8,7 @@ With this add-on you can use the MinimOSD hardware in combination with a flight 
 
 It is intended as a temporary solution for the FPV guys till the OpenPilot OSD is available.
 
-It is working with OpenPilot-RELEASE 12.10.1 and OpenPilot-RELEASE 12.10.2.
+It is working with OpenPilot-RELEASE 12.10.1, OpenPilot-RELEASE 12.10.2 and OpenPilot 'next' (choose the correct hex file in the download area, look into the descriptions of the different files).
 
 Not every panel is portet 1 to 1 compared to MinimOSD-Extra.
 
