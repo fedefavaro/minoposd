@@ -44,7 +44,7 @@ http://minoposd.googlecode.com/svn/wiki/images/MinimOSDFlightBatt_12V.jpg
 
 With that the FPV cam and the video transmitter can be powered by the flight batt and the flight batt voltage can be meassured by the voltage divider I soldered in the next steps.
 
-But be aware: This only works with 3s (12.6V) flight batt and if the FPV cam and video transmitter works with 12V!
+But be aware: Check if your FPV-cam and AVTX can handle the flight batt voltage you are using!
 
 
 ----
