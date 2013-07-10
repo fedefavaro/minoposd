@@ -2,6 +2,7 @@
 
 * [Intro Introduction]
 
+  * [HexFiles Get the hex files]
   * [OpenPilot OpenPilot configuration]
   * [Connections Hardware connections]
   * [MinimOSD MinimOSD update & config]
@@ -9,4 +10,3 @@
   * [PacketRxOk PacketRxOk detection]
   * [AnalogRSSI Analog RSSI]
   * [Compiling Compiling the source]
-  
