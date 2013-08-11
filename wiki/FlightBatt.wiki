@@ -66,6 +66,11 @@ It is a voltage divider / filter using the following parts:
 || 1 || resistor || 1.1 kOhm || 1% ||
 || 1 || resistor || 16.0 kOhm || 1% ||
 
+You don't need to use exactly these values as it can be calibrated in the first 30 seconds after powering the OSD.
+
+As long as the divider divides the highest voltage you are using to a maximum of 1.1V.
+
+Calculate it with the following info from here: http://en.wikipedia.org/wiki/Voltage_divider
 
 ----
 
@@ -95,6 +100,10 @@ It is a voltage divider using the following parts:
 || *count* || *type* || *value* || *precision* ||
 || 1 || resistor || 1.1 kOhm || 1% ||
 || 1 || resistor || 3.0 kOhm || 1% ||
+
+You don't need to use exactly these values as it can be calibrated in the first 30 seconds after powering the OSD.
+
+Calculate it with the following info from here: http://en.wikipedia.org/wiki/Voltage_divider
 
 The current sensor and the MinimOSD:
 
